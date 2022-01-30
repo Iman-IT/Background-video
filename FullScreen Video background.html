@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>fullScreen Video Background</title><style type="text/css">
+	*{ padding: 0; margin: 0;  font-family: 'Poppins' , sans-serif;}
+.banner{ justify-content: center; align-items: center;}
+.banner video{ width: 100%; height: 100%; object-fit: cover; top:0; left:0;position: absolute;}
+.banner .description{ position: relative; z-index: 1;  text-align: center;max-width: 1000px; margin: 0 auto; }
+.banner .description h1{ margin: 0;padding: 6px; font-size: 3.5rem; font-variant: small-caps; color: blue; text-shadow: 3px 4px 12px white; margin-top: 140px;}
+	.banner .description p{ color: white; font-size: 1.5rem; font-family: 'cuveat'; }
+nav{   position: relative; z-index: 1; top: 30px; left: 50px;}
+nav ul li{ margin: 4px 4px;  padding: 6px 5px;  list-style: none; font-weight: 8px;display: inline-block; }
+nav ul li a{ color: white; padding: 6px 5px;  font-size: 15px; transition: 0.6s ease;
+ border: .5px solid white; font-size: 20px; text-decoration: none; font-family:'cursive';
+font-weight: 6px;}
+nav ul li a:hover{ background: white; color: black; font-size: 25px; }
+h1 span{ transition: 0.6s ease; }
+h1:hover span{color: white; text-shadow: 0px 0px 10px white;  :0px 0px 20px white; :0px 0px 40px white; :0px 0px 80px white; :0px 0px 120px black; :0px 0px 160px black; :0px 0px 180px black;}
+h1:hover span:nth-child(1){ margin-left: 50px; }
+	</style></head>
+<body>
+	<nav><ul><li><a href="#">Home</a></li>
+		<li><a href="#">Courses</a></li>
+		<li><a href="#">Skills</a></li>
+		<li><a href="#">About me</a></li>
+</ul></nav>
+	<div class="banner">
+	<video  autoplay muted loop>
+			<source src="waves.mp4" type="video/mp4">
+		</video>
+		<div class="description">
+			<h1><span>Iman Front-end-Developer </span></h1>
+	<p> My name is Iman Aziz. I am BS computer science 3rd semester student.
+	My mostly interset is in programming.Nowdays i am working on front-end-development.
+	I completed HTML,CSS and Javascript begginer course and now practicing these skills. </p>
+			
+		</div>
+	</div>
+</body>
+</html>
